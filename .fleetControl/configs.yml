@@ -1,0 +1,16 @@
+configs:
+  # note: this file format may allow for just defining 1 config for all platforms
+  - name: New relic java agent config for k8s
+    slug: java-config # How is this slug used, can agents pick whatever they want or does this need to match something in AC?
+    platform: k8s # would this just be k8s vs on-host or will there be a set of agreed-upon platform options
+    description: java agent configuration, provided by the user
+    type: java-config # How is this different than the slug and what is it used for?
+    version: 1.0.0 # this is the schema version
+    schema: ./schema/java-config-k8s-1.0.0.json
+  - name: New relic java agent config for host
+    slug: java-config
+    platform: host
+    description: java agent configuration, provided by the user
+    type: java-config
+    version: 1.0.0
+    schema: ./schema/java-config-host-1.0.0.json
