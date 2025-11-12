@@ -1,4 +1,4 @@
-configs:
+configurationDefinitions:
   - name: New relic java agent config for k8s
     slug: java-config # How is this slug used, can agents pick whatever they want or does this need to match something in AC?
     platform: kubernetes # would this just be k8s vs on-host or will there be a larger set of agreed-upon platform options
