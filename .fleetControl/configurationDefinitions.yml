@@ -1,0 +1,17 @@
+configurationDefinitions:
+  - name: New relic java agent config for k8s
+    slug: java-config # How is this slug used, can agents pick whatever they want or does this need to match something in AC?
+    platform: kubernetes # would this just be k8s vs on-host or will there be a larger set of agreed-upon platform options
+    description: java agent configuration, provided by the user
+    type: java-config # How is this different from the slug and what is it used for?
+    format: yml # the format of the agent config file
+    version: 1.0.0 # this is the schema version
+    schema: ./schemas/java-config.json
+  - name: New relic java agent config for host
+    slug: java-config
+    platform: host
+    description: java agent configuration, provided by the user
+    type: java-config
+    format: yml
+    version: 1.0.0
+    schema: ./schemas/java-config.json
