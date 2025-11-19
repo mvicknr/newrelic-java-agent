@@ -4,7 +4,7 @@ configurationDefinitions:
     platform: kubernetes # would this just be k8s vs on-host or will there be a larger set of agreed-upon platform options
     description: java agent configuration, provided by the user
     type: java-config # How is this different from the slug and what is it used for?
-    format: json # the format of the schema
+    format: yml # the format of the agent config file
     version: 1.0.0 # this is the schema version
     schema: ./schemas/java-config.json
   - name: New relic java agent config for host
@@ -12,6 +12,6 @@ configurationDefinitions:
     platform: host
     description: java agent configuration, provided by the user
     type: java-config
-    format: json
+    format: yml
     version: 1.0.0
     schema: ./schemas/java-config.json
